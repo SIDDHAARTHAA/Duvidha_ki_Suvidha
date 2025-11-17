@@ -9,7 +9,10 @@ import complaintRoutes from "./src/routes/Complaintroutes.js";
 const app = express();
 
 app.use(cors({
-  origin: "https://duvidha-ki-suvidha.vercel.app",
+  origin: [
+    "https://duvidha-ki-suvidha.vercel.app",
+    "https://dks.sidlabs.shop"
+  ],
   credentials: true
 }));
 
